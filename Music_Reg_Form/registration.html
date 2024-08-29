@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <h1 id="title">Music Class Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name"id="name-label" >Enter your Full Name: <input id="name" type="text" name="name" placeholder="Last Name, First Name" required /></label>
+         <label for="email" id="email-label">Enter your Email: <input id="email" type="email" name="email"  placeholder="johndoe@example.com" required /></label>
+         <label for="number" id="number-label">Enter your Number: <input id="number" type="number" name="number" min="0" max="1000"  placeholder="#####" required /></label>
+         <fieldset>
+           <label><legend>Select Type of Class</legend></label>
+           <select id="dropdown">
+           <option>(select one)</option>
+           <option>PreSchool Music Class</option>
+           <option>Mummy and Me Class</option>
+           </select>
+           </fieldset>
+           <label><input type="radio" name="student-type" value="1" checked class="inline" />New Student</label>
+           <label><input type="radio" name="student-type" value="2" class="inline" />Returning Student</label>
+           <fieldset>
+             <label><legend>Select Class Season (required)</legend></label>
+           <label><input type="checkbox" value="1"class="inline" />Summer Class</label>
+           <label><input type="checkbox" value="2" class="inline"/>Winter Class</label>
+           <label><input type="checkbox" value="3"class="inline" />Fall Class</label>
+           </fieldset>
+           <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Add additional notes about your child..."></textarea>
+      </fieldset>
+           <input type="submit" value="Submit" id="submit"/>
+
+    </form>
+  </body>
+</html>
